@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Aplicativo.css';
+import alunoInfos from './exercicio.js';
 
 function Aplicativo() {
 
@@ -36,6 +37,14 @@ function Aplicativo() {
           <p>{telefone}</p>
         </div>
       </div>
+
+      <div className="Resultado">
+        <div className="Resultado_Total">
+          <p>{alunoInfos.nome}</p>
+          <p>{alunoInfos.ra}</p>
+        </div>
+      </div>
+
     </div>
   );
 }
